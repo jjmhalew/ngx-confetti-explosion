@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgxConfettiExplosionComponent } from 'projects/ngx-confetti-explosion/src/public-api';
 // import { NgxConfettiExplosionComponent } from 'ngx-confetti-explosion';
@@ -11,13 +11,13 @@ import { NgxConfettiExplosionComponent } from 'projects/ngx-confetti-explosion/s
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ngx-confetti';
-  show = false;
+  protected title = signal<string>('ngx-confetti');
+  protected show = signal<boolean>(false);
   
   onShow(){
-    this.show  = false;  
+    this.show.set(false);  
     setTimeout(()=>{
-      this.show = true;
+      this.show.set(true);
     });
   }
  

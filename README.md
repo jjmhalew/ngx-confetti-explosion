@@ -1,4 +1,4 @@
-# ngx-confetti-explosion
+# ngx-confetti-explosion by ChellappanRajan
 
 Let's celebrate with confetti! ngx-confetti-explosion is an Angular package that lets you create an amazing confetti explosion on your web page.
 

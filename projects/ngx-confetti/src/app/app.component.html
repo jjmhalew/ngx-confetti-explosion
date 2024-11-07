@@ -1,9 +1,8 @@
 <section class="flex-center">
-  <button  (click)="onShow()">
+  <button (click)="onShow()">
     Example 
-    </button>
-    @if(show){
-      <ngx-confetti-explosion    />
-    }
-    
+  </button>
+  @if(show()) {
+    <ngx-confetti-explosion />
+  }
 </section>
