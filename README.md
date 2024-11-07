@@ -14,10 +14,10 @@ Let's celebrate with confetti! ngx-confetti-explosion is an Angular package that
 
 ```bash
 # npm
-npm install ngx-confetti-explosion
+npm install @jjmhalew/ngx-confetti-explosion
 
 # yarn
-yarn add ngx-confetti-explosion
+yarn add @jjmhalew/ngx-confetti-explosion
 ```
 
 ## Usage
