@@ -8,7 +8,8 @@ import {
   OnInit,
   Output,
   inject,
-  numberAttribute
+  numberAttribute,
+  output
 } from '@angular/core';
 import {
   BEZIER_MEDIAN,
@@ -49,11 +50,11 @@ export class NgxConfettiExplosionComponent implements OnInit,OnDestroy {
   @Input({ transform: numberAttribute }) stageWidth = 1600;
   @Input() stageWidthUnit: CssUnit = 'px';
   @Input() particleShape: ParticleShape = 'mix';
-  @Output() explosionDone = new EventEmitter();
+  public readonly explosionDone = output<void>();
  
-  public particles!: Array<Particle>;
+  public particles!: Particle[];
   #timer!: ReturnType<typeof setTimeout> | null;
-  cdr = inject(ChangeDetectorRef);
+  private cdr = inject(ChangeDetectorRef);
   
 
   ngOnInit(): void {
@@ -161,13 +162,13 @@ export class NgxConfettiExplosionComponent implements OnInit,OnDestroy {
     return `
     <div class="confetti-explosion-container" [style.--stage-height]="stageHeight + stageHeightUnit">
       @for (particle of particles; track particle) {
-      <div
-        class="particle"
-        [style]="particle"
-      >
-        <div></div>
-      </div>
-    }
+        <div
+          class="particle"
+          [style]="particle"
+        >
+          <div></div>
+        </div>
+      }
     </div>
     `
   }
