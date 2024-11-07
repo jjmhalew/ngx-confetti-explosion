@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgxConfettiExplosionComponent } from 'projects/ngx-confetti-explosion/src/public-api';
 // import { NgxConfettiExplosionComponent } from 'ngx-confetti-explosion';
@@ -8,7 +8,8 @@ import { NgxConfettiExplosionComponent } from 'projects/ngx-confetti-explosion/s
   standalone: true,
   imports: [RouterOutlet,NgxConfettiExplosionComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   protected title = signal<string>('ngx-confetti');

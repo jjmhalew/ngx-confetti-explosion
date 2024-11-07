@@ -1,13 +1,13 @@
 {
   "name": "ngx-confetti-explosion",
-  "version": "4.0.0",
-  "author": "Chellappan",
+  "version": "18.2.0",
+  "author": "jjmhalew",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChellappanRajan/ngx-confetti-explosion.git"
+    "url": "git+https://github.com/jjmhalew/ngx-confetti-explosion.git"
   },
-  "homepage": "https://github.com/ChellappanRajan/ngx-confetti-explosion#readme",
+  "homepage": "https://github.com/jjmhalew/ngx-confetti-explosion#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
