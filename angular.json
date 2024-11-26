@@ -53,9 +53,7 @@
             "outputPath": "dist/ngx-confetti",
             "index": "projects/ngx-confetti/src/index.html",
             "browser": "projects/ngx-confetti/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": [],
             "tsConfig": "projects/ngx-confetti/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
