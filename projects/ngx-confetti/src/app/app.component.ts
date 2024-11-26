@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NgxConfettiExplosionComponent } from 'projects/ngx-confetti-explosion/src/public-api';
+import { NgxConfettiExplosionComponent } from '../../../ngx-confetti-explosion/src/lib/ngx-confetti-explosion.component';
 // import { NgxConfettiExplosionComponent } from 'ngx-confetti-explosion';
 
 @Component({
@@ -14,11 +13,10 @@ export class AppComponent {
   protected title = signal<string>('ngx-confetti');
   protected show = signal<boolean>(false);
   
-  onShow(){
+  protected onShow(): void {
     this.show.set(false);  
     setTimeout(()=>{
       this.show.set(true);
     });
   }
- 
 }
