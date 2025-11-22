@@ -25,14 +25,7 @@
           "defaultConfiguration": "production"
         },
         "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "tsConfig": "projects/ngx-confetti-explosion/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
+          "builder": "@angular/build:unit-test"
         }
       }
     },
@@ -102,23 +95,7 @@
           "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "projects/ngx-confetti/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ngx-confetti/src/favicon.ico",
-              "projects/ngx-confetti/src/assets"
-            ],
-            "styles": [
-              "projects/ngx-confetti/src/styles.scss"
-            ],
-            "scripts": []
-          }
+          "builder": "@angular/build:unit-test"
         }
       }
     }
