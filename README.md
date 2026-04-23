@@ -1,4 +1,9 @@
-# ngx-confetti-explosion by ChellappanRajan
+![Release](https://img.shields.io/github/v/release/jjmhalew/ngx-confetti-explosion)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jjmhalew/ngx-confetti-explosion)
+![Downloads](https://img.shields.io/npm/dw/@jjmhalew/ngx-confetti-explosion)
+[![License](https://img.shields.io/:license-MIT-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
+
+# ngx-confetti-explosion
 
 Let's celebrate with confetti! ngx-confetti-explosion is an Angular package that lets you create an amazing confetti explosion on your web page.
 
